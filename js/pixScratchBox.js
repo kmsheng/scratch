@@ -7,15 +7,15 @@
 
         function ScratchBox(box) {
 
-            this.box = box;
-            this.layer = {};
-            this.previousX = undefined;
-            this.previousY = undefined;
-
             var self = this,
                 image = new Image();
 
-            this.mousemove = function (e) {
+            self.box = box;
+            self.layer = {};
+            self.previousX = undefined;
+            self.previousY = undefined;
+
+            self.mousemove = function (e) {
 
                 var ctx = self.layer.ctx,
                     canvas = self.layer.canvas,
